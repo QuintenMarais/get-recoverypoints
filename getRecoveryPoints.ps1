@@ -2,7 +2,7 @@
 Connect-AzAccount
 
 # Define the date range
-$startDate = (Get-Date).AddDays(-9370)
+$startDate = (Get-Date).AddDays(-9370) # 1 Jan 1999
 $endDate = Get-Date
 
 # Array to store backup information
