@@ -2,7 +2,7 @@
 Connect-AzAccount
 
 # Define the date range
-$startDate = (Get-Date).AddDays(-730)
+$startDate = (Get-Date).AddDays(-9370)
 $endDate = Get-Date
 
 # Array to store backup information
@@ -10,12 +10,12 @@ $backupData = @()
 
 # List of Recovery Services Vaults to iterate through
 $vaults = @(
-    "Vault1",
-    "Vault2"
+    "Vault1",    # ADD ALL YOUR VAULTS HERE
+    "Vault2"     # NO , in the Last Line
 )
 
 # The Resource Group the Resovery service vaut is located in
-$Resourcegroup = "ResourceGroup1"
+$Resourcegroup = "ResourceGroup1" # ADD THE RESOURCE GROUP HERE
 
 # Start progress
 $totalVaults = $vaults.Count
